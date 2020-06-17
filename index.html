@@ -1,0 +1,147 @@
+<html style="background-color: #81BCF3;">
+	<head>
+		<title>
+		Dog walking app
+		</title>
+		<link rel="stylesheet" href="dogwalking.css"/>
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+		<link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/675071846818775054/697740473959317544/pixil-frame-0.png" />
+		<style>
+			h1 {
+font-size: 4em;
+text-align: center;
+font-family: 'Pacifico', cursive;
+}
+h2 {
+font-size: 2em;
+text-align: center;
+font-style: italic;
+}
+.problem {
+	margin: auto;
+	text-align: center;
+	align-self: auto;
+	width: 80%;
+	border: 0px;
+}
+
+}
+.randomizer {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+.button {
+	transition-duration: 0.4s;
+	width: 18%;
+}
+.button:hover {
+  background-color: #ECC30B; 
+  color: white;
+}
+caption {
+	font-size: 2em;
+	padding: 5%
+
+}
+.features {
+	width: auto;
+	border: 3px solid black;
+	border-collapse: collapse;
+}
+.features td {
+	padding:1%;
+	border: 3px solid black;
+	border-collapse: collapse;
+}
+
+.features th {
+	font-size: 1.3em;
+	padding: 1%;
+	border: 3px solid black;
+	border-collapse: collapse;
+}
+</style>
+	</head>
+	<body>
+
+		<h1>    Dog walking app <img src="https://cdn.discordapp.com/attachments/675071846818775054/697740473959317544/pixil-frame-0.png" width="40" height="40"></h1>
+		<h2> Easiest way to walk a dog or get your dog walked. </h2>
+		<table class="problem" align="center">
+			<tr>
+			<th>Ever had a problem when you needed to walk your dog but didn't have time?<br>Or you want to walk a dog but your family can't allow you to have a dog?<br>This app is solution to the problem. </th>
+			<td> <img src="https://cdn.discordapp.com/attachments/675071846818775054/697760375327948821/Z.png" width="50%" height="50%" >
+			</td>
+			</tr>
+			<tr>
+
+			</tr>
+		 </table>
+		 <table align="center" class="features">
+		 <caption> Features </caption>
+		 <tr>
+		 	<th>
+		 	Hire a walker
+		 	</th>
+		 	<th>
+		 	Work
+		 	</th>
+		 	<th>
+		 	Help dogs
+		 	</th>
+		 	<th>
+		 	Positive vibes only
+		 	</th>
+		 </tr>
+		  <tr>
+		 	<td> You can hire a person to walk your dog when don't have time.
+		 	</td>
+		 	<td> Want to work with dogs? That's your app to use when you want to earn some cash as you work with dogs.
+		 	</td>
+		 	<td> Wanna just help dogs for free. That's possibility aswell.
+		 	</td>
+		 	<td> Dogs make many smile and you should smile aswell.
+		 	</td>
+		 </tr>
+		 <tr>
+		 	<td> <img src="https://cdn.discordapp.com/attachments/675071846818775054/697764738733441034/89YbatCXuOAAAAAElFTkSuQmCC.png">
+		 	</td>
+		 	<td> <img src="https://cdn.discordapp.com/attachments/675071846818775054/697764536811520020/9k.png">
+		 	</td>
+		 	<td> <img src="https://cdn.discordapp.com/attachments/675071846818775054/697751218075992074/Z.png">
+		 	</td>
+		 	<td> <img src="https://cdn.discordapp.com/attachments/675071846818775054/697760439756652584/2Q.png" >
+		 	</td>
+		 </tr>
+
+
+
+
+
+
+
+		 </table>
+
+		 <h3> Wanna try the prototype?</h3>
+		<a href="https://www.figma.com/file/92cbXzv24zTALfciNLeniU/Dog-walking-app?node-id=1%3A2"> Click here!</a> 
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="randomizer"; align="center">
+		<p> You can also check the number of workers right now. </p>
+		<button class="button"; onclick="randomize()";> Check the amount of dog walkers </button>
+		<p id="workers";> </p>
+		</div>
+<script>
+	function randomize() {
+			var number = Math.floor(Math.random() * 10) + 10; 
+document.getElementById("workers").innerHTML = 'Right now there are ' + number + ' walkers' ;
+
+	}
+
+
+</script>
+
+	</body>
+</html>
